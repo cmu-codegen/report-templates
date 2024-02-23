@@ -1,11 +1,7 @@
 *.aux
-*.log
-*.out
-*.aux
 *.bbl
 *.blg
 *.fdb_latexmk
 *.fls
 *.log
 *.out
-.DS_Store

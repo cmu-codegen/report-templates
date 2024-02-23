@@ -1,0 +1,109 @@
+% File project.tex
+%% Style files for ACL 2021
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2021}
+\usepackage{times}
+\usepackage{booktabs}
+\usepackage{todonotes} \usepackage{latexsym}
+\renewcommand{\UrlFont}{\ttfamily\small}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+\aclfinalcopy 
+
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+\title{11-891 Report 1: Dataset Analysis and Baseline/Method Proposal}
+
+\author{
+  First Last 1\thanks{\hspace{4pt}Everyone Contributed Equally -- Alphabetical order} \hspace{2em} First Last 2$^*$ \hspace{2em} First Last 3$^*$ \hspace{2em} First Last 4$^*$ \\
+  \texttt{\{ID1, ID2, ID3, ID4\}@andrew.cmu.edu}
+  }
+
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Task Definition and Dataset Choice (1 page)}
+
+\subsection{What phenomena or task will you work on?}
+
+\subsection{What about this phenomena or task fundamentally involves code?}
+
+\subsection{Does a dataset exist, or will you be collecting it, or does your task not require a dataset?}
+If the dataset exists already, reference it here. If it doesn't, detail how you'll collect it and how long it will take, or justify why your task doesn't require a dataset.
+
+\subsection{Expertise}
+We have the following expertise in the underlying aspects required by this project
+  \begin{enumerate}
+      \item Team member 1: Research paper in static analysis, ...
+      \item Team member 2: Took NLP in Fall 2023, ...
+      \item ...
+  \end{enumerate}
+
+\clearpage
+\section{Dataset Analysis (1 page)}
+\subsection{Dataset properties} (GBs, code languages, numbers of examples, ...)
+\subsection{Instance analysis}
+(use a small sample -- e.g. validation splits):
+  \begin{enumerate}
+    \item Code diversity: e.g. syntactic complexity, API usage, input and output spaces
+    \item If your task/dataset involves language: Lexical diversity, sentence length, ...
+  \end{enumerate}
+\subsection{Evaluation metrics}
+What intrinsic (intermediate) and extrinsic (end-task-related) evaluations will you use to know if things are working?
+
+\clearpage
+
+\section{Related Work and Background}
+Aim for 5 papers per person, which can go into the categories below.
+\paragraph{Related Datasets} 
+
+\paragraph{Baselines}
+
+\paragraph{Prior Work}
+
+\paragraph{Relevant Techniques}
+
+
+\clearpage
+\section{Baselines and Proposed Approach (1 page)}
+
+\subsection{Baselines}
+Ideally at least two baselines, although one is ok if it will be difficult to implement (e.g. no publicly released code or models).
+
+We will ask you to have results from these, and analysis of them, in Report 2.
+
+\subsection{Proposed Approach(es)}
+What might you do beyond the baseline?
+
+\subsection{Compute requirements}
+\begin{enumerate}
+  \item Files (if you have a large training dataset -- can fit in RAM?)
+  \item Models (can fit on GCP/AWS GPUs?)
+  \item Training (if you're training models, estimated GPU hours)
+  \item Inference (how many instances in your task/dataset? Do you need to sample many outputs? Execute code?)
+\end{enumerate}
+
+\clearpage
+\section{Team member contributions}
+\paragraph{Member 1} contributed ...
+
+\paragraph{Member 2} contributed ...
+
+\paragraph{...} contributed ...
+
+\clearpage
+% Please use 
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+
+%\appendix
+
+
+
+\end{document}
