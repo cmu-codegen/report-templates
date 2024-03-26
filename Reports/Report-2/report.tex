@@ -1,0 +1,129 @@
+% File project.tex
+%% Style files for ACL 2021
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2021}
+\usepackage{times}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage{latexsym}
+\renewcommand{\UrlFont}{\ttfamily\small}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+\aclfinalcopy 
+
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+\title{Report 2}
+
+\author{
+  First Last 1\thanks{\hspace{4pt}Everyone Contributed Equally -- Alphabetical order} \hspace{2em} First Last 2$^*$ \hspace{2em} First Last 3$^*$ \hspace{2em} First Last 4$^*$ \\
+  \texttt{\{ID1, ID2, ID3, ID4\}@andrew.cmu.edu}
+  }
+
+\date{}
+
+\begin{document}
+\maketitle
+This template is a recommended format for the report. You can use a different format if you prefer, but we will assign points following the breakdown given here. 
+In addition to the points by each section, we'll also have 3 points for report clarity.
+
+\section{Task and Dataset(s) (less than 1 page) [1 point]}
+Give us a quick (e.g. 1 paragraph) reminder of the task and dataset(s) you're working with. 
+Do you have all the data you need for the project?
+If you've been collecting data, give an update on it here. How far are you from completing data collection?
+
+\clearpage
+
+\section{Models (1 page) [4 points]}
+
+\subsection{Baselines}
+Please explain the baselines you are running. These can be models or approaches from past work, but you need to be running them yourselves so that you can analyze their results and outputs.
+
+\begin{enumerate}
+  \item Baseline 1 is ...  We expect this to capture ....
+  \item Baseline 2 is ...  We expect this to capture ....
+\end{enumerate}
+
+\subsection{Comparison Methods}
+
+If there are past approaches to this task and dataset that you'll be comparing to, but not running yourself, describe them briefly here.
+
+\begin{enumerate}
+  \item Comparison Method 1 is ... whose key insight is ...
+  \item Comparison Method 2 is ... whose key insight is ...
+\end{enumerate}
+
+\clearpage
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+                            & \multicolumn{2}{c}{Dev} \\
+Methods                     & Accuracy $\uparrow$ & Interaction Turns $\downarrow$  \\
+\midrule
+Baseline 1 \cite{} & & \\
+Baseline 2 \cite{} & & \\
+\midrule
+Comparison Method 1 (if applicable) \cite{} & & \\
+Comparison Method 2 (if applicable) \cite{} & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+\section{Results (1 page) [4 points]}
+Replace columns with the correct metrics for your task (extrinsic). Give text descriptions of the findings as well. 
+
+\clearpage
+\section{Analysis}
+This section should include plots. For example, how key metrics vary with a specific hyperparameter, task complexity, etc.
+
+\subsection{Intrinsic Metrics (1 page) [4 points]}
+These are not the task itself but are indicative of how well the approach is doing on related skills.
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+                            & \multicolumn{2}{c}{Dev} \\
+Methods                     & Oracle Accuracy $\uparrow$ & Candidates Sampled $\downarrow$  \\
+\midrule
+Baseline 1 \cite{} & & \\
+Baseline 2 \cite{} & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\subsection{Qualitative Analysis and Examples (1 page) [4 points]}
+We want you to have illustrative examples from your data here. The best way to structure this is likely a full page table that includes: Example input, comparison of model outputs, theory about reason for failure. But, you can also have it be primarily text, if you support each of your points in the text with real examples.
+
+\clearpage
+\section{Updated proposal for your method (1 page) [5 points]}
+Based on the analysis and findings you've had here, what do you plan to do for the final stage of the report? Make this self-contained, so that we don't need to refer back to Report 1. Use one or more figures as appropriate.
+
+\clearpage
+\section{Project-related}
+
+\subsection{Comments and questions}
+If you forsee any challenges, or have open qustions or want feedback on specific things, you can mention them here.
+
+
+\subsection{Team member contributions to this report}
+\paragraph{Member 1} contributed ...
+
+\paragraph{Member 2} contributed ...
+
+\paragraph{...} contributed ...
+
+
+% Please use 
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+
+%\appendix
+
+
+
+\end{document}
