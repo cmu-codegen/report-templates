@@ -1,0 +1,133 @@
+% File project.tex
+%% Style files for ACL 2021
+\documentclass[11pt,a4paper]{article}
+\usepackage[hyperref]{acl2021}
+\usepackage{times}
+\usepackage{booktabs}
+\usepackage{todonotes}
+\usepackage{latexsym}
+\renewcommand{\UrlFont}{\ttfamily\small}
+
+% This is not strictly necessary, and may be commented out,
+% but it will improve the layout of the manuscript,
+% and will typically save some space.
+\usepackage{microtype}
+
+\aclfinalcopy 
+
+\newcommand\BibTeX{B\textsc{ib}\TeX}
+
+\title{11-891 Final Report}
+
+\author{
+  First Last 1\thanks{\hspace{4pt}Everyone Contributed Equally -- Alphabetical order} \hspace{2em} First Last 2$^*$ \hspace{2em} First Last 3$^*$ \hspace{2em} First Last 4$^*$ \\
+  \texttt{\{ID1, ID2, ID3, ID4\}@andrew.cmu.edu}
+  }
+
+\date{}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+In this project we introduce ... to tackle... we show that ...
+\end{abstract}
+
+\section{Introduction and Problem Definition (1-1.25 pages) [1 point]}
+This will be about 1 page, and lays out the contributions.
+
+\clearpage
+\section{Related Work and Background [1 point]}
+Integrate your previous report here
+
+\clearpage
+\section{Task Setup and Data [1 point]}
+Integrate your previous report here
+
+\clearpage
+\section{Baselines [1 point]}
+Integrate your previous report here
+
+\clearpage
+\section{Proposed Model ($>$1 page) [5 points]}
+This is not a copy and page from R2, it should be updated to reflect the final proposed model. Explain if there are multiple versions (e.g. your model has possible extensions, different amounts of exemplars, etc).  Please also include an easy to read model diagram here.
+
+The below are example subsections -- yours may vary!
+
+\subsection{Loss functions}
+
+\subsection{Changes to training data}
+
+\subsection{Hyperparameters and their effects}
+
+\clearpage
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+                            & \multicolumn{2}{c}{Dev} \\
+Methods                     & Accuracy $\uparrow$ & Interaction Turns $\downarrow$ \\
+\midrule
+Baseline 1 \cite{} & & \\
+Baseline 2 \cite{} & & \\
+\midrule
+Comparison Method 1 (if applicable) \cite{} & & \\
+Comparison Method 2 (if applicable) \cite{} & & \\
+\midrule
+Proposed Method (v1)            & & \\
+Proposed Method (v2)            & & \\
+Proposed Method (final)            & & \\
+\bottomrule
+\end{tabular}
+\end{table}
+\section{Results (1 page) [5 points]}
+Replace columns with the correct metrics for your task (extrinsic). Include multiple versions of your final model.  You do not need to run on the test set but are encouraged to try if you have nice results on Dev.
+
+\clearpage
+\section{Analysis (2 pages)}
+This section should include plots.  For example, how key metrics vary with a specific hyperparameter, task complexity, etc.
+
+\subsection{Intrinsic Metrics (1 page) [5 points]}
+These are not the task itself but indicative of how well the approach is doing on related tasks.
+\begin{table}[t]
+\centering
+\begin{tabular}{@{}lrr@{}}
+\toprule
+                            & \multicolumn{2}{c}{Dev} \\
+Methods                     & Oracle Accuracy $\uparrow$ & Candidates Sampled $\downarrow$  \\
+\midrule
+Baseline 1 \cite{} & & \\
+Baseline 2 \cite{} & & \\
+\midrule
+Proposed Method             & &  \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\clearpage
+\subsection{Qualitative Analysis and Examples (1 page) [5 points]}
+We want you to have illustrative examples from your data here. The best way to structure this is likely a full page table that includes: Example input, comparison of model outputs, theory about reason for failure. But, you can also have it be primarily text, if you support each of your points in the text with real examples.
+
+\clearpage
+\section{Future work and Limitations (0.5-1 page) [3 points]}
+Please thoroughly discuss the limitations of the proposed model.  Where are some places it does not work, phenomena it does not capture, places that ideally it can be improved.
+
+For future work, if you were to extend this project over another 4 or so months of work, what would you be interested to do?
+
+\clearpage
+\section{Team member contributions}
+\paragraph{Member 1} contributed ...
+
+\paragraph{Member 2} contributed ...
+
+\paragraph{...} contributed ...
+
+
+% Please use 
+\bibliographystyle{acl_natbib}
+\bibliography{references}
+
+%\appendix
+
+
+
+\end{document}
